@@ -1,0 +1,347 @@
+/* Importing Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400..900&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@media(max-width:768px)
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* navbar styling*/
+header {
+    background-color: antiquewhite; 
+    padding: 20px 0;
+}
+
+header .navbar{
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Logo left, menu right */
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar .nav-logo .logo-text{
+    color: olive;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: "PT Serif", serif;
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: antiquewhite;
+    border: 1px solid chocolate;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    font-family: "PT Serif", serif;
+    font-size: medium;
+    color: black;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    background-color: rgb(248, 193, 125);
+    color: chocolate;
+}
+
+.image-container{
+    width: 1200px;
+    margin: 30px auto 0;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.read-more-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.read-more-about:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.hero-section{
+    min-height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: auto;
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title{
+    font-size: 500%;
+    color: darkolivegreen;
+    font-family: "Alegreya", serif;
+    text-align: center;
+}
+
+.hero-section .hero-details .subtitle{
+    margin-top: 8px;
+    max-width: 70%;
+    font-family: "Alegreya", serif;
+    color: goldenrod;
+    font-size:xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-section .hero-details .description{
+    max-width: 150%;
+    margin: 30px 0 50px;
+    font-size: 25px;
+    text-align: center;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.hero-section .hero-details .buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.hero-section .hero-details .button{
+    padding: 10px 26px;
+    font-size: xx-large;
+    font-family: "Alegreya", serif;
+    color: chocolate;
+    border-radius: 20px;
+    font-weight: lighter;
+    transition: 0.3s ease;
+}
+
+.hero-section .hero-details .button:hover{
+    color: rgb(248, 193, 125);
+    border-color: blanchedalmond;
+    background: transparent;
+}
+
+/*-- SERVICES SECTION--*/
+.services-section{
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color:  rgb(255, 255, 255);
+}
+
+.services-section h2{
+    font-size: 50px;
+    color: darkolivegreen;
+    margin-bottom: 5px;
+    font-family: "Alegreya", serif;
+}
+
+/* Line under the main title */
+.services-line{
+    width: 100px;
+    height: 1px;
+    background-color: #d4af37;
+    margin: 0 auto 40px;
+}
+
+/* Container for all items */
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual service item */
+.service-item img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service-item h3{
+    font-size: 24px;
+    color: goldenrod;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/* Line under the title */
+.item-line{
+    width: 80px;
+    height: 1px;
+    background-color: #d4af37;
+    margin: 0 auto 20px;
+}
+
+.service-item p{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px){
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* footer styling */
+footer{
+    background-color: antiquewhite;
+    color: darkolivegreen; 
+    padding: 40px 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-column{
+    flex: 2;
+}
+
+.footer-column h2:hover{
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4af37;
+    display: inline-block;
+}
+
+.footer-column p{
+    margin: 8px 0;
+    font-size: 12px;
+    color: chocolate;
+}
+
+.footer-column a{
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+.social-icons h2:hover{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4af37;
+    display: inline-block;
+}
+
+/* CIRCLE */
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ICON */
+.social-icons i {
+    color: white;
+    font-size: 30px;
+    gap: 20px;
+    display: flex;
+}
+
+/* HOVER */
+.social-icons a:hover {
+    background-color: chocolate;
+    transform: scale(1.1);
+}
+
+
+.copyright-bar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 20px;
+    background-color:  rgb(255, 255, 255); 
+    font-size: 12px;
+}
+
+/* --- LEFT SIDE TEXT --- */
+.copyright-text{
+    text-align: left;
+    margin-right: 200px;
+    color: darkgrey;
+}
+
+/* --- RIGHT SIDE TEXT --- */
+.seo-text{
+    text-align: right;
+    color: darkgrey;
+    font-weight: 500;
+}

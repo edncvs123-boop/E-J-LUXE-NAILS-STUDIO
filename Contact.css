@@ -1,0 +1,265 @@
+@media(max-width:768px)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+
+
+/* navbar styling*/
+header {
+    position: sticky;
+    top: 50;
+    width: 100%;
+    z-index: 1000;
+    background-color: antiquewhite; 
+}
+
+
+header .navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+    color: olive;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: "Alegreya", serif;
+}
+
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: antiquewhite;
+    border: 1px solid chocolate;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    font-family: "PT Serif", serif;
+    font-size: medium;
+    color: black;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    background-color: rgb(248, 193, 125);
+    color: chocolate;
+}
+
+
+/* BODY */
+body {
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* HEADER */
+.contact-title {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    color: darkolivegreen;
+}
+
+.contact-title h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.contact-title p {
+    margin-top: 10px;
+    color:goldenrod;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+/* BRANCHES */
+.branches h2 {
+    margin-bottom: 20px;
+}
+
+.branch {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.branch h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* CONTACT FORM */
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #444;
+}
+
+/* footer styling */
+footer{
+    background-color: antiquewhite;
+    color: darkolivegreen; 
+    padding: 40px 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-column{
+    flex: 2;
+}
+
+.footer-column h2:hover{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4af37;
+    display: inline-block;
+}
+
+.footer-column p{
+    margin: 8px 0;
+    font-size: 12px;
+    color: chocolate;
+}
+
+.footer-column a{
+    color: goldenrod;
+    font-size: 12px;
+    text-decoration: none;
+  
+}
+
+.social-icons h2:hover{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4af37;
+    display: inline-block;
+}
+
+
+/* CIRCLE */
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ICON */
+.social-icons i {
+    color: white;
+    font-size: 20px;
+    gap: 20px;
+    display: flex;
+}
+
+/* HOVER */
+.social-icons a:hover {
+    background-color: chocolate;
+    transform: scale(1.1);
+}
+
+
+.copyright-bar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 20px;
+    background-color:  rgb(255, 255, 255); 
+    font-size: 12px;
+}
+
+/* --- LEFT SIDE TEXT --- */
+.copyright-text{
+    text-align: left;
+    margin-right: 200px;
+    color: darkgrey;
+}
+
+/* --- RIGHT SIDE TEXT --- */
+.seo-text{
+    text-align: right;
+    color: darkgrey;
+    font-weight: 500;
+}
